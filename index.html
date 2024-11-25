@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color: black;
+            --nav-links:#fff;
+            --heading:white;
+            --bgColor:rgb(37, 211, 37);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        nav{
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            background-color: var(--primary-color);
+            align-items: center;
+        }
+        nav>p{
+            color: var(--heading);
+            font-size: x-large;
+            font-weight: bold;
+        }
+        ul{
+            display: flex;
+            gap: 50px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: var(--nav-links);
+            font-weight: 700;
+        }
+
+        li{
+            padding: 10px;
+            list-style: none;
+        }
+
+        li:nth-child(5),:nth-child(4){
+            background-color: var(--bgColor);
+            padding: 10px;
+            border-radius: 18px;
+        }
+        span{
+            color: var(--bgColor);
+        }
+
+        li:hover{
+            background-color: var(--bgColor);
+            border-radius: 18px;
+            transition: all .5s;
+        }        
+    </style>
+</head>
+<body>
+    <nav>
+        <p><span>Challenge</span> Four</p>
+
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Sign Up</a></li>
+            <li><a href="">Log in</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
